@@ -9,7 +9,7 @@ const SliderData = () => {
     const toast = useToast()
     const Slider = async () => {
         try {
-          const response = await axios.get("https://coursify-w5v8.onrender.com/slider");
+          const response = await axios.get("https://software-backend.onrender.com/slider");
           setSliderData(response.data);
           // console.log(response.data)
          
@@ -23,7 +23,7 @@ const SliderData = () => {
         
       const handleDelete=(id)=>{
         
-            const data = axios.delete(`https://coursify-w5v8.onrender.com/slider/${id}`)
+            const data = axios.delete(`https://software-backend.onrender.com/slider/${id}`)
             console.log(id)
             toast({
                position: 'top',

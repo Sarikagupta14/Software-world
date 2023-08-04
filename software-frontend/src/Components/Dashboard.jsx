@@ -4,6 +4,7 @@ import StoryData from './Admin/StoryData';
 
 import CategoryData from './Admin/CategoryData';
 import SliderData from './Admin/SliderData';
+import ContactList from './Admin/ContactList';
 
 const Dashboard = () => {
     
@@ -29,7 +30,7 @@ const handleComponent = (componentName) => {
         {activeComponent === 'Slider' &&  <SliderData/>}
         {activeComponent === 'Category' &&  <CategoryData/>}
         {activeComponent === 'Story' &&  <StoryData/>}
-        {activeComponent === 'Contact' &&  'Contact'}
+        {activeComponent === 'Contact' &&  <ContactList/>}
         </Box>
 
 

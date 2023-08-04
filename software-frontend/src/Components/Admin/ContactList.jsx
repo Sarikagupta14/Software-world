@@ -3,13 +3,13 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import {AiOutlineDelete} from 'react-icons/ai'
 import { Link } from 'react-router-dom';
-const CategoryData = () => {
-    const[categoryData, setCategoryData] = useState([])
+const ContactList = () => {
+    const[contactData, setContactData] = useState([])
      const toast = useToast()
     const categoriesData = async () => {
         try {
-          const response = await axios.get("https://coursify-w5v8.onrender.com/contact");
-          setCategoryData(response.data);
+          const response = await axios.get("https://software-backend.onrender.com/contact");
+          setContactData(response.data);
           // console.log(response.data)
         
         } catch (error) {
@@ -22,7 +22,7 @@ const CategoryData = () => {
       const handleDelete=(id)=>{
 
        
-            axios.delete(`https://coursify-w5v8.onrender.com/contact/${id}`)
+            axios.delete(`https://software-backend.onrender.com/contact/${id}`)
             console.log(id)
             toast({
                position: 'top',
@@ -48,9 +48,9 @@ const CategoryData = () => {
         </Tr>
       </Thead>
       <Tbody border={'1px solid gray'}>
-        {categoryData && categoryData.map((u) => (
+        {contactData && contactData.map((u) => (
           <Tr key={u._id} border="2px solid gray">
-            <Td color={"Black"} fontWeight={"bold"}>{u.firstname}</Td>
+            <Td color={"Black"} fontWeight={"bold"}>{u.firstName}</Td>
             <Td color={"Black"} >{u.email}</Td>
             <Td color={"Black"} >{u.number}</Td>
               <Td><Button colorScheme="red" leftIcon={<AiOutlineDelete/>} size="sm" onClick={() => handleDelete(u._id)}>
@@ -64,4 +64,4 @@ const CategoryData = () => {
   )
 }
 
-export default CategoryData
+export default ContactList

@@ -39,7 +39,7 @@ export const Contact = () => {
       const handleSubmit = (e) => {
         e.preventDefault();
           try {
-            const categoryData = axios.post('https://coursify-w5v8.onrender.com/contact',formData)
+            const categoryData = axios.post('https://software-backend.onrender.com/contact',formData)
             console.log(categoryData)
             toast({
               position: 'top',

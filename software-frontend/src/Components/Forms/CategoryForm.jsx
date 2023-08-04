@@ -22,7 +22,7 @@ const CategoryForm = () => {
     const handleClick=()=>{
 
       try {
-        const categoryData = axios.post('https://coursify-w5v8.onrender.com/category',data)
+        const categoryData = axios.post('https://software-backend.onrender.com/category',data)
         console.log(categoryData)
         toast({
           position: 'top',

@@ -22,7 +22,7 @@ const StoryForm = () => {
      
      const handleClick=()=>{
       try {
-        const categoryData = axios.post('https://coursify-w5v8.onrender.com/story',data)
+        const categoryData = axios.post('https://software-backend.onrender.com/story',data)
         console.log(categoryData)
         toast({
           position: 'top',

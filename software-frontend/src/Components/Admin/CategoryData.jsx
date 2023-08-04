@@ -8,7 +8,7 @@ const CategoryData = () => {
      const toast = useToast()
     const categoriesData = async () => {
         try {
-          const response = await axios.get("https://coursify-w5v8.onrender.com/category");
+          const response = await axios.get("https://software-backend.onrender.com/category");
           setCategoryData(response.data);
           // console.log(response.data)
         
@@ -22,7 +22,7 @@ const CategoryData = () => {
       const handleDelete=(id)=>{
 
        
-            axios.delete(`https://coursify-w5v8.onrender.com/category/${id}`)
+            axios.delete(`https://software-backend.onrender.com/category/${id}`)
             console.log(id)
             toast({
                position: 'top',

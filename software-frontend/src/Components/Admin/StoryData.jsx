@@ -8,7 +8,7 @@ const StoryData = () => {
     const toast = useToast()
     const Stories = async () => {
         try {
-          const response = await axios.get("https://coursify-w5v8.onrender.com/story");
+          const response = await axios.get("https://software-backend.onrender.com/story");
           setStory(response.data);
           // console.log(response.data)
          
@@ -22,7 +22,7 @@ const StoryData = () => {
 
       const handleDelete=(id)=>{
       
-             axios.delete(`https://coursify-w5v8.onrender.com/story/${id}`)
+             axios.delete(`https://software-backend.onrender.com/story${id}`)
             console.log(id)
             toast({
                position: 'top',

@@ -20,7 +20,7 @@ const SliderForm = () => {
      
      const handleClick=()=>{
       try {
-        const categoryData = axios.post('https://coursify-w5v8.onrender.com/slider',data)
+        const categoryData = axios.post('https://software-backend.onrender.com/slider',data)
         console.log(categoryData)
         toast({
           position: 'top',
