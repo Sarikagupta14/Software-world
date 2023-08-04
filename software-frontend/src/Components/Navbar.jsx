@@ -24,12 +24,12 @@ const Navbar = () => {
         <Link to={"/"}><Button _hover={{ color:"#f28524",borderBottom:"2px solid #f28524"}}>Home</Button> </Link>
         <Link to="/about"><Button _hover={{ color:"#f28524",borderBottom:"2px solid #f28524"}}>About Us</Button></Link>  
        
-         <Button _hover={{ color:"#f28524",borderBottom:"2px solid #f28524"}}>Placement</Button> 
+         {/* <Button _hover={{ color:"#f28524",borderBottom:"2px solid #f28524"}}>Placement</Button>  */}
           <Button _hover={{ color:"#f28524",borderBottom:"2px solid #f28524"}}>Career</Button>
         <Link to="/contact"><Button _hover={{ color:"#f28524",borderBottom:"2px solid #f28524"}}>Contact</Button></Link> 
         <Link to={'/center'}><Button _hover={{ color:"#f28524",borderBottom:"2px solid #f28524"}}>Authorized Center</Button></Link> 
-        </Flex>
-         
+        </Flex> 
+    
       <Link to={'/login'}><Button mr="30px" mt="5px" _hover={{bg:"transparent", color:"#f28524"}} leftIcon={<FaUser />} size="md">
       Login
     </Button>

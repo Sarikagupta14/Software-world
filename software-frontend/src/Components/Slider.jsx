@@ -12,7 +12,7 @@ const Slider = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("https://coursify-w5v8.onrender.com/slider");
+      const response = await axios.get("https://software-backend.onrender.com/slider");
       setData(response.data);
       setLoading(false);
     } catch (error) {

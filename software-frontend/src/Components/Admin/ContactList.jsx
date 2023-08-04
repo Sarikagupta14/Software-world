@@ -58,7 +58,7 @@ const ContactList = () => {
               </Button> </Td>
           </Tr>
         ))}
-      </Tbody>
+      </Tbody> 
     </Table>
 </Box>
   )
